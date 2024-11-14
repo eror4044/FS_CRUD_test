@@ -1,0 +1,101 @@
+.event-item-wrapper {
+  background-color: #ffffff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.event-item {
+  margin: 15px auto;
+  align-items: flex-start;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.event-item-wrapper:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.event-item h3 {
+  font-size: 22px;
+  color: #333333;
+  margin: 0 0 10px 0;
+  font-weight: bold;
+}
+
+.event-item-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 14px;
+  color: #666666;
+  margin-top: 5px;
+}
+.event-item-details {
+  display: flex;
+  gap: 10px;
+}
+.event-item-date,
+.event-item-location {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.event-item-date::before {
+  content: "📅";
+}
+
+.event-item-location::before {
+  content: "📍";
+}
+
+.event-item-description {
+  font-size: 16px;
+  color: #555555;
+  line-height: 1.5;
+  margin: 10px 0;
+  text-align: left;
+  word-break: break-word;
+}
+
+.event-item-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+button.edit-button,
+button.delete-button {
+  padding: 8px 16px;
+  height: 40px;
+  font-size: 14px;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.edit-button {
+  background-color: #007bff;
+}
+
+button.edit-button:hover {
+  background-color: #0056b3;
+}
+
+button.delete-button {
+  background-color: #dc3545;
+}
+
+button.delete-button:hover {
+  background-color: #c82333;
+}
+p {
+  margin: 0;
+}
